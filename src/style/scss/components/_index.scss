@@ -39,10 +39,10 @@ header {
     text-align: center;
     a {
       font-family: $font-heading;
-      font-weight: bold;
-      color: $text;
       font-size: $font-size-h5;
       line-height: $line-height-h5;
+      font-weight: bold;
+      color: $text;
       padding: 0 clamp(16px, 1.5rem, 32px);
       border-right: 1px solid $text;
       i {
@@ -52,11 +52,15 @@ header {
         border: none;
       }
       &:hover {
-        background-image: linear-gradient(45deg, $hover-primary, $hover-secondary);
+        i {
+          color: $hover-secondary;
+          transition: all ease-in-out 0.3s;
+        }
+        background-image: linear-gradient($hover-secondary, $hover-primary);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: all ease-in-out 0.4s;
+        transition: all ease-in-out 0.3s;
       }
     }
   }
@@ -116,6 +120,7 @@ main {
           font-size: $font-size-h1;
           line-height: $line-height-h1;
           text-align: center;
+          font-weight: bold;
         }
         p {
           font-size: $font-size-p;
@@ -139,6 +144,14 @@ main {
           font-weight: bold;
           text-align: center;
           border-radius: 1rem;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            background-color: $secondary;
+            border: 2px solid $hover-primary;
+            color: $hover-primary;
+            transform: scale(1.1);
+            transition: all ease-in-out 0.3s;
+          }
         }
       }
     }
