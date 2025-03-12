@@ -40,11 +40,11 @@ header {
     a {
       font-family: $font-heading;
       font-weight: bold;
-      color: $whitesmoke;
+      color: $text;
       font-size: $font-size-h5;
       line-height: $line-height-h5;
       padding: 0 clamp(16px, 1.5rem, 32px);
-      border-right: 1px solid $whitesmoke;
+      border-right: 1px solid $text;
       i {
         color: $secondary;
       }
@@ -52,7 +52,7 @@ header {
         border: none;
       }
       &:hover {
-        background-image: linear-gradient(45deg, $whitesmoke, $secondary);
+        background-image: linear-gradient(45deg, $hover-primary, $hover-secondary);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -70,17 +70,18 @@ header {
     height: clamp(48px, 5rem, 96px);
     width: clamp(96px, 192px, 192px);
     .btn {
-      background-color: $secondary;
+      background-color: $primary;
+      border: 2px solid $secondary;
+      color: $text;
       border-radius: 1rem;
       font-size: $font-size-h6;
-      border: 2px solid $black-50;
       font-weight: bold;
-      color: $black-50;
       width: clamp(40px, 5rem, 80px);
       height: clamp(20px, 2.5rem, 40px);
       &:hover {
-        background-color: $primary;
-        color: $secondary;
+        border-color: $hover-primary;
+        background-color: $hover-secondary;
+        color: $hover-primary;
         transition: all ease-in-out 0.3s;
       }
     }
@@ -115,7 +116,6 @@ main {
           font-size: $font-size-h1;
           line-height: $line-height-h1;
           text-align: center;
-          color: $black;
         }
         p {
           font-size: $font-size-p;
@@ -129,15 +129,15 @@ main {
         align-items: center;
         gap: clamp(64px, 7.5rem, 128px);
         &__btn {
+          background-color: $primary;
+          border: 2px solid $secondary;
+          color: $text;
           height: clamp(40px, 5rem, 80px);
           width: clamp(80px, 10rem, 160px);
-          background-color: $secondary;
           font-size: $font-size-h6;
           line-height: $line-height-h6;
           font-weight: bold;
           text-align: center;
-          color: $black;
-          border: solid $primary;
           border-radius: 1rem;
         }
       }
@@ -146,7 +146,7 @@ main {
       border-radius: 1rem;
       width: clamp(448px, 55rem, 896px);
       height: clamp(300px, 36rem, 600px);
-      background-color: black;
+      background-color: $primary;
     }
   }
 }

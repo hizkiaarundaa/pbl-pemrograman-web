@@ -1,3 +1,4 @@
+@import "colors";
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,8 @@ body {
   flex-direction: column;
   min-height: 100vh; // Pastikan body minimal setinggi viewport
   margin: 0;
+  background-color: $secondary;
+  color: black;
 }
 
 main {
