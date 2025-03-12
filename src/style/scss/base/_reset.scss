@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Pastikan body minimal setinggi viewport
+  margin: 0;
+}
+
+main {
+  flex-grow: 1; // Mengisi semua sisa ruang
+  display: flex; // Agar konten dalam main lebih fleksibel
+  flex-direction: column; // Konten diatur ke bawah
+}

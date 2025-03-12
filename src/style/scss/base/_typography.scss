@@ -1,0 +1,29 @@
+// Variabel untuk font
+$font-primary: "Inter", sans-serif;
+$font-heading: "Montserrat", sans-serif;
+
+// Variabel untuk ukuran dan line-height
+$font-size-h1: 90px;
+$line-height-h1: 112px;
+
+$font-size-h2: 64px;
+$line-height-h2: 80px;
+
+$font-size-h3: 46px;
+$line-height-h3: 64px;
+
+$font-size-h4: 32px;
+$line-height-h4: 48px;
+
+$font-size-h5: 22px;
+$line-height-h5: 32px;
+
+$font-size-h6: 16px;
+$line-height-h6: 24px;
+
+$font-size-p: 16px;
+$line-height-p: 24px;
+
+body {
+  font-family: $font-primary;
+}
