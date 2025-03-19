@@ -6,45 +6,76 @@
     <title>DaurAksi.com</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="assets/logo-final.png" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/5c7188c43f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/all.min.css" />
   </head>
   <body>
     <header>
       <!-- logo -->
-      <div class="logo__wrapper">
-        <img src="assets/logo-final.png" class="logo" alt="logo daur aksi" tabindex="0" width="80" height="80" />
+      <div class="header__logo">
+        <img
+          src="assets/logo-final.png"
+          class="header__logo--logo"
+          id="logo"
+          alt="logo daur aksi"
+          tabindex="0"
+          width="80"
+          height="80" />
       </div>
       <!-- navbar -->
       <nav>
-        <a href="pages/education.html">Edukasi <i class="fa-regular fa-file-lines"></i> </a>
-        <a href="">Komunitas <i class="fa-regular fa-comments"></i></a>
-        <a href="">Layanan <i class="fa-solid fa-briefcase"></i></a>
-        <a href="">Hadiah <i class="fa-solid fa-gift"></i></a>
+        <ul>
+          <li>
+            <a href="./pages/edukasi.html"
+              >Edukasi
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/komunitas.html"
+              >Komunitas
+              <i class="fa-regular fa-comments"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/layanan.html"
+              >Layanan
+              <i class="fa-solid fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/hadiah.html"
+              >Hadiah
+              <i class="fa-solid fa-gift"> </i>
+            </a>
+          </li>
+        </ul>
       </nav>
       <!-- register / login -->
       <div class="register">
-        <button class="btn btn__login"><i class="fa-regular fa-paper-plane"></i></button>
-        <button class="btn btn__signup"><i class="fa-solid fa-user-plus"></i></button>
+        <button class="register__btn"><i class="fa-regular fa-paper-plane" id="login-icon"></i></button>
+        <button class="register__btn"><i class="fa-solid fa-user-plus" id="signup-icon"></i></button>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero__title">
-          <div class="hero__title-headline">
+          <div class="hero__title--headline">
             <h1>Aksi Nyata Untuk Lingkungan</h1>
             <p>
               DaurAksi Memudahkan daur ulang dengan edukasi, layanan penjemputan sampah, dan sistem poin yang bisa
               ditukar dengan hadiah menarik
             </p>
           </div>
-          <div class="cta">
-            <button class="cta__btn">Gabung Sekarang</button>
-            <button class="cta__btn">Komunitas DaurAksi</button>
+          <div class="hero__cta">
+            <button class="hero__cta__btn">Gabung Sekarang</button>
+            <button class="hero__cta__btn">Komunitas DaurAksi</button>
           </div>
         </div>
-        <div class="hero__image"></div>
+        <div class="hero__image">placeholder</div>
       </section>
     </main>
+
+    <script src="js/script.js" async="false"></script>
   </body>
 </html>
